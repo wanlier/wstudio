@@ -2,10 +2,7 @@
 title: "我的第一份作业"
 author: "韩梅梅"
 date: "2/16/2017"
-output: 
-  html_document: 
-    number_sections: yes
-    theme: cerulean
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
