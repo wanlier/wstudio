@@ -7,24 +7,24 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
 ```
 
-## R Markdown介绍
+我们知道文字的表现力是有限的，所以需要表格和图片来增强表现力。
 
-李雷还没来，我先做个表。
+## 制作表格
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+对R自带的数据集cars，用head函数得到其前两行数据，将信息存到变量my_table中，再用knitr宏包中的kable函数来生成表格。
 
 ```{r cars}
-summary(cars)
+my_table = head(cars,2)
+kable(my_table)
 ```
 
 ## 加入图片
 
-然后画个图, for example:
+然后再画个图，对R自带的pressure数据集，用plot函数来画图。
 
 ```{r pressure, echo=FALSE}
 plot(pressure)
 ```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
