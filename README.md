@@ -4,20 +4,38 @@
 
 
 
-## 请大家不要删除你出了你自己创建的文件之外的文件
+## 一、请大家不要删除你出了你自己创建的文件之外的文件
 
 
 比如，韩梅梅在这里自己创建了hanmeimei1314.Rmd的文件，那么她只能修改文件名为hanmeimei1314的文件，其他文件都不要动。
 
 其他每个同学也一样。
 
-## 成为wstudio库的Collaborators
+## 二、成为wstudio库的Collaborators
 
 为了获得push到作业库中的权限，每个同学必须成为wstudio库的Collaborators。
 
 请大家按照[课程主页](https://qiufei.github.io/rnet/)上说的方法和命名规则注册github账户，我会按照大家的用户名加你们为Collaborators。
 
-## git使用
+### 加你们的消息发出后，你们登陆自己的GitHub主页后会有提示
+
+![pop](./pic/0-adding-pop.png)
+
+### 电子那个小铃铛后会看到消息
+
+![news](./pic/0-adding-news.png)
+
+### 点击消息打开，接受邀请
+
+![acccepte](./pic/0-adding-accepte.png)
+
+是的，左边那个帅气的小猫就是作业服务器的头像。
+
+### 接受成功，获取push权限
+
+![success](./pic/0-adding-success.png)
+
+## 三、git使用
 
 * git是团队协作的工具
 
