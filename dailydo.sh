@@ -7,7 +7,7 @@ git pull
 
 # greeting message
 
-echo "welcome to wanli Rstudio!"
+echo "欢迎使用课程rstudio服务器!"
 
 
                             #### 这里是策略填写区 ######
@@ -37,4 +37,4 @@ rm *.html
 git add --all && git commit -a -m 'better' && git push
 
 # finally
-echo "well done! all things are updated!"  
+echo " well done! 所有的更改已经更新到GitHub！"  

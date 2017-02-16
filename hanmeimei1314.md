@@ -1,5 +1,5 @@
 ---
-title: "hanmeimei1314"
+title: "我的第一份作业"
 author: "韩梅梅"
 date: "2/16/2017"
 output: html_document
@@ -7,7 +7,7 @@ output: html_document
 
 
 
-## R Markdown
+## R Markdown介绍
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
