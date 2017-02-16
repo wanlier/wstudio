@@ -21,7 +21,7 @@
 
 ![pop](./pic/0-adding-pop.png)
 
-### 电子那个小铃铛后会看到消息
+### 点击那个小铃铛后会看到消息
 
 ![news](./pic/0-adding-news.png)
 
