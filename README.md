@@ -11,6 +11,11 @@
 
 其他每个同学也一样。
 
+## 成为wstudio库的Collaborators
+
+为了获得push到作业库中的权限，每个同学必须成为wstudio库的Collaborators。
+
+请大家按照[课程主页](https://qiufei.github.io/rnet/)上说的方法和命名规则注册github账户，我会按照大家的用户名加你们为Collaborators。
 
 ## git使用
 
@@ -20,13 +25,13 @@
 
 * 但是git的真正价值在于团队协作
 
-## git的基本设置
+### git的基本设置
 
 * git在安装后需要设置邮箱和用户名
 
 * 下面介绍下设置用户名和邮箱的命令，具体怎么使用git来与服务器练通信会在操作课上讲。
 
-## git的邮箱设置
+### git的邮箱设置
 
 在rstudio的Tools菜单下，点击Shell...，会跳出命令行界面
 
@@ -34,14 +39,14 @@
 
 把上面的QQ邮箱地址换成你自己的邮箱。
 
-## git用户名设置
+### git用户名设置
 
 ![user](./pic/05-git-user.png)
 
 把上面的wanlier换成你自己在github网站注册的用户名，例如hanmeimei1314
 
 
-## git的四条基本命令
+### git的四条基本命令
 
 * git pull
 
@@ -51,7 +56,7 @@
 
 * git push
 
-## 第一条命令git pull
+### 第一条命令git pull
 
 * 从云端库里获得更新
 
@@ -59,7 +64,7 @@
 
 * 这条命令就等于是从<https://github.com/wanlier/wstudio>下载最新的全部内容
 
-## 第二条命令git add
+### 第二条命令git add
 
 * 每个人对自己的Rmd文件作了修改后，要告诉git系统，你确定了这些修改
 
@@ -67,7 +72,7 @@
 
 * 参数--all是所有修改的意思
 
-## 第三条命令git commit
+### 第三条命令git commit
 
 * 是你要执行的git动作
 
@@ -77,7 +82,7 @@
 
 * 最后的双引号信息也是必须的，这是解释你这条修改的目的是什么。
 
-## 第四条命令 git push
+### 第四条命令 git push
 
 * 前一条命令说了要把修改加到原始库中去
 
