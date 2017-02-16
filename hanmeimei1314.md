@@ -9,7 +9,7 @@ output: html_document
 
 ## R Markdown介绍
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+李雷还没来，我先做个表。
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
@@ -28,9 +28,9 @@ summary(cars)
 ##  Max.   :25.0   Max.   :120.00
 ```
 
-## Including Plots
+## 加入图片
 
-You can also embed plots, for example:
+然后画个图, for example:
 
 ![plot of chunk pressure](figure/pressure-1.png)
 
