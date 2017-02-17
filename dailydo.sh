@@ -1,6 +1,9 @@
 #!/bin/sh
 # get into operation folder
+<<<<<<< HEAD
 cd ~/wstudio
+=======
+>>>>>>> 1522987ad72d6fc2171602d582a3410d42ac5462
 
 # get source file updates
 git pull
@@ -34,4 +37,4 @@ rm *.html
 git add --all && git commit -a -m 'better' && git push
 
 # finally
-echo " well done! 所有的更改已经更新到作业区https://github.com/wanlier/wstudio"  
+echo " well done! 所有的更改已经更新到作业区https://github.com/wanlier/wstudio"

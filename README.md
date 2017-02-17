@@ -4,14 +4,22 @@
 
 
 
-## 一、请大家不要删除你出了你自己创建的文件之外的文件
+## 一、请大家不要删除除了你自己创建的文件之外的文件
 
 
 比如，韩梅梅在这里自己创建了hanmeimei1314.Rmd的文件，那么她只能修改文件名为hanmeimei1314的文件，其他文件都不要动。
 
 其他每个同学也一样。
 
-## 二、成为wstudio库的Collaborators
+
+## 二、作业的内容
+
+家庭作业的主要内容是每人从这里的[课程Quandl代码](https://github.com/qiufei/stockcode/blob/master/课程代码.csv)中选1到5个股票，按照老师的要求，和自己的想法，写一些分析报告。
+
+写好的分析报告上传到作业区的wstudio库中。要有上传内容到wstudio库的权限，首先要称为wstudio库的Collaborators。
+
+
+## 三、成为wstudio库的Collaborators
 
 为了获得push到作业库中的权限，每个同学必须成为wstudio库的Collaborators。
 
@@ -35,7 +43,7 @@
 
 ![success](./pic/0-adding-success.png)
 
-## 三、git使用
+## 四、git使用
 
 * git是团队协作的工具
 
