@@ -34,4 +34,4 @@ rm *.html
 git add --all && git commit -a -m 'better' && git push
 
 # finally
-echo " well done! 所有的更改已经更新到作业区https://github.com/wanlier/wstudio"  
+echo " well done! 所有的更改已经更新到作业区https://github.com/wanlier/wstudio"
