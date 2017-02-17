@@ -1,6 +1,5 @@
 #!/bin/sh
 # get into operation folder
-cd wstudio
 
 # get source file updates
 git pull
