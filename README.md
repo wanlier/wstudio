@@ -14,7 +14,7 @@
 
 ## 二、作业的内容
 
-家庭作业的主要内容是每人选1到5个股票，按照老师的要求，和自己的想法，写一些分析报告。
+家庭作业的主要内容是每人从这里的[课程Quandl代码](https://github.com/qiufei/stockcode/blob/master/课程代码.csv)中选1到5个股票，按照老师的要求，和自己的想法，写一些分析报告。
 
 写好的分析报告上传到作业区的wstudio库中。要有上传内容到wstudio库的权限，首先要称为wstudio库的Collaborators。
 
