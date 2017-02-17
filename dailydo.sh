@@ -1,6 +1,6 @@
 #!/bin/sh
 # get into operation folder
-cd /home/wanli/wstudio
+cd ~/wstudio
 
 # get source file updates
 git pull
