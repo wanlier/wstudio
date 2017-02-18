@@ -2,7 +2,7 @@
 
 # get into operation folder
 
-cd /home/wstudio
+cd wstudio
 
 # get source file updates
 git pull
