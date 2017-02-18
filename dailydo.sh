@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 # get into operation folder
 
-cd ~/wstudio
+cd /wstudio
 
 # get source file updates
 git pull
