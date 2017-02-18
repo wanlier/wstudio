@@ -2,7 +2,7 @@
 
 # get into operation folder
 
-cd ~/wstudio
+cd /home/wanli/wstudio
 
 # get source file updates
 git pull
