@@ -1,7 +1,6 @@
 #!/bin/sh
 
 # get into operation folder
-
 cd wstudio
 
 # get source file updates
@@ -16,7 +15,6 @@ git pull
 # 先把你自己要运行的Rmd文件保存在wstudio文件夹中，比如你要执行的策略文件为lilei7525.Rmd
 # 然后只需要复制黏贴下面这条命令，把"hanmeimei1314.Rmd"改成"lilei7525.Rmd"就好了
 Rscript -e 'library("knitr"); knit2html("hanmeimei1314.Rmd",force_v1 = TRUE)'
-
 
 
 ##################################################################################
