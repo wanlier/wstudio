@@ -3,6 +3,10 @@
 这里是万里学院《互联网金融智能交易操作》课程的作业区，课程主页见<https://qiufei.github.io/rnet/>
 
 
+安装软件下载区：
+
+http://pan.baidu.com/s/1pKEKtXx
+
 
 ## 一、请大家不要删除除了你自己创建的文件之外的文件
 
