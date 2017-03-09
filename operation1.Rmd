@@ -1,0 +1,86 @@
+---
+title: "我的第一份R作业"
+author: "邱飞"
+date: "3/9/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 介绍：获取数据
+
+这是我的第一份R语言作业，老师让我们对上证指数做一些简单的分析。
+
+首先，是通过Quandl宏包来获取上证指数数据。
+
+下面的api_key是注册Quandl网站后，网站免费提供的。有了这个代码，可以保证日访问量超过500次。
+
+```{r get shanghai index data}
+library(Quandl)
+sha = Quandl("GOOG/SHA_000001", api_key="9iGeZZoG6Vc46rfs1AgJ")
+
+```
+
+
+## 直观感受：数字
+
+我们获得的上证指数数据已经保存在变量sha中，现在我们对它来做些简单的描述性分析。
+
+### 看看数据的前几行长啥样
+
+```{r see the first rows of the dataframe}
+# the defualt is to see first 6 rows
+head(sha)
+
+# if you want see first 10 rows
+head(sha,10)
+
+```
+
+如果你想让现实的结果好看一点，你可以用knitr宏包来美化一下输出结果。
+
+```{r}
+library(knitr)
+simple_head = head(sha)
+beautiful_head = kable(simple_head)
+
+beautiful_head
+
+```
+
+
+### 看看数据的结构
+
+```{r}
+str(sha)
+```
+
+### 看看数据的简单统计
+
+```{r}
+summary(sha)
+```
+
+
+
+## 直观感受：图形
+
+R语言一个强大之处在于它的图形表达能力，但是它的默认的图形输出实在不好看，所以需要我们用各种宏包做下美化。
+
+### 默认图形画图
+```{r}
+plot(sha$Date,sha$Close)
+```
+
+
+### ggplot画图
+```{r}
+library(ggplot2)
+picture = ggplot(data = sha, aes(x = Date,y = Close))+
+                 geom_line()+
+                 geom_point()
+picture
+```
+
