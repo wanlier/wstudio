@@ -2,9 +2,7 @@
 title: "我的第一份R作业"
 author: "邱飞"
 date: "3/9/2017"
-output: 
-  html_document: 
-    keep_md: yes
+output: word_document
 ---
 
 ```{r setup, include=FALSE}
