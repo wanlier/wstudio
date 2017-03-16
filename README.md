@@ -66,11 +66,15 @@ http://pan.baidu.com/s/1pKEKtXx
 
 在rstudio的Tools菜单下，点击Shell...，会跳出命令行界面
 
+`git config --global user.email hfutqiufei@163.com`
+
 ![email](./pic/05-git-email.png)
 
 把上面的QQ邮箱地址换成你自己的邮箱。
 
 ### git用户名设置
+
+`git config --global user.name peter`
 
 ![user](./pic/05-git-user.png)
 
