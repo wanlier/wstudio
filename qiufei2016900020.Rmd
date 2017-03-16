@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 首先，是通过Quandl宏包来获取上证指数数据。
 
-下面的api_key是注册Quandl网站后，网站免费提供的。有了这个代码，可以保证日访问量超过500次。
+下面的api_key是注册Quandl网站后，网站免费提供的。有了这个代码，可以保证日访问量超过500次。so
 
 ```{r}
 

@@ -35,8 +35,6 @@ vignettes/*.pdf
 
 # unneeded format files
 *.html
-*.doc
-*.docx
 *.pdf
 *.txt
 *.xls
