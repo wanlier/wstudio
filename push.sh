@@ -2,7 +2,7 @@
 
 git add --all
 
-git commit -a -m "简单初始化 "
+git commit -a -m "我的名字是 "
 
 git push
 
