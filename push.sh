@@ -1,11 +1,8 @@
 #!/bin/sh
 
-
-
-
 git add --all
 
-git commit -a -m "我的名字是 "
+git commit -a -m "简单初始化 "
 
 git push
 
