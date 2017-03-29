@@ -122,3 +122,40 @@ http://pan.baidu.com/s/1pKEKtXx
 * 前一条命令说了要把修改加到原始库中去
 
 * git push是真正开始数据传输，可以理解为你把数据上传网盘
+
+## 将本作业数据库clone到本地
+
+- 打开Rstudio
+ 点击File--New project...
+ 
+- 在出现的对话框里选version control
+ 
+![version control](./pic/0-version.png)
+ 
+- 然后在出现的对话框里点击git
+ 
+![git](./pic/0-git.png)
+
+- 在打开的界面的第一行里填入moodle操作指南里的那个网址
+  
+  在第二行填入库的名字，建议用wstudio
+  
+  最后点击Create Project。
+![get repo](./pic/0-repo.png)
+
+- 点击完Create Project，等待数据下载完毕后，rstudio会自动到下面这个界面：
+
+![repo open](./pic/0-repo-open.png)
+
+
+- 然后从模版创建你自己的文件,先复制模版
+
+![rmd](./pic/0-rmd.png)
+
+
+- 然后改名
+
+![change name](./pic/0-change-name.png)
+
+点击完ok后，你会发现文件区的最后多了一个叫XXX.Rmd的文件
+ 
