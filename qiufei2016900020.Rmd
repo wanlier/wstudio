@@ -83,3 +83,6 @@ picture
 
 ```
 
+## math equation
+
+$$ sin(\theta)+\frac{1+y^2}{x} $$

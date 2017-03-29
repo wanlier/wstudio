@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 library(knitr)
 ```
 
+运行日期是`r Sys.Date()`。这一行主要是用来检验是否自动运行。
+
 我们知道文字的表现力是有限的，所以需要表格和图片来增强表现力。
 
 ## 制作表格
