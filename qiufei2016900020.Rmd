@@ -9,6 +9,8 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+# 载入股票数据
+load("./opppt/stock.rda")
 ```
 
 ## 介绍：数据获取

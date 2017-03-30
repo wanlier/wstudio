@@ -34,6 +34,8 @@ vignettes/*.pdf
 .Rproj.user
 
 # unneeded format files
+*.doc
+*.docx
 *.html
 *.pdf
 *.txt
