@@ -1,0 +1,98 @@
+---
+title: "期末考试"
+author: "骆张盈-2014011165"
+date: "2017年6月22日"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+load("stock_clean.rda")
+```
+
+##获取每个股票近三十个交易日的数据
+
+```{r}
+library(dplyr)
+number_of_days = 30
+stock_latest = slice(stock_clean,
+                     1:number_of_days)
+```
+
+##去掉近三十天没有数据的股票
+
+```{r}
+stock_latest_clean = filter(stock_latest,
+                            date>="2016-12-01")
+```
+
+##获得中位数和最新收盘价，并且合并两者
+
+```{r}
+median_close = summarise(stock_latest_clean,
+                          latest_date = first(date),
+                          median_close = median(close),
+                         latest_close =first(close))
+```
+
+##计算低估率指标
+
+```{r}
+under_close = mutate(median_close,
+                     under_ratio = latest_close/median_close)
+```
+
+##获得被低估的十只股票
+
+```{r}
+under_close_sort = arrange(under_close,
+                           under_ratio)
+under_close_top10 = head(under_close_sort,10)
+head(under_close_top10)
+```
+
+##获取指定的10只股票的标准差
+
+```{r}
+under_top10 = filter(stock_latest_clean,
+                     code%in%under_close_top10$code)
+under_top10_30 = slice(under_top10,1:30)
+under_top10_sd = summarise(under_top10_30,
+                           D = sd(close))
+```
+
+##将股票最新收盘价、中位数和标准差数据合并
+
+```{r}
+operation = merge(under_close_top10,
+                  under_top10_sd,
+                  by = "code")
+```
+
+##生成买入卖出指标
+
+```{r}
+operation_index = transmute(operation,
+                            code = code,
+                            date = latest_date,
+                           low = median_close-2*D,
+                           high =median_close+2*D,
+                           price = latest_close,
+                           ratio = under_ratio)
+operation_sort = arrange(operation_index,ratio)
+```
+
+##生成容易阅读的报告
+
+```{r}
+report = transmute(operation_sort,
+                   code = code,
+                   date =date,
+                   buy_or_not =if_else(price<low,"y","n"),
+                   sell_or_not = if_else(price>=high,"y","n"),
+                   ratio=ratio)
+library(knitr)
+kable(report)
+```
+
+
