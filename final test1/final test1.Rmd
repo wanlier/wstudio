@@ -28,11 +28,42 @@ stock_latest_clean = filter(stock_latest,
 
 ##获得中位数和最新收盘价，并且合并两者
 
+median_close2 和median_close不完全完全一样。但是不影响最终结果，差异应该就在 median_close多了条 SHA600001的的数据。 
+
+median_close2 和median_closeyi 一个是 dataframe,一个是tbl_df，就是ddply宏包专用的da taframe，可能是这些数据结构的差异造成这个不同 ，这个应该是技术上的细节 。
+
+
 ```{r}
 median_close = summarise(stock_latest_clean,
                           latest_date = first(date),
                           median_close = median(close),
                          latest_close =first(close))
+
+latest_median = summarise(stock_latest_clean,
+                        latest_date = first(date),
+                        median_close = median(close)
+                        )
+
+latest_close = summarise(stock_latest_clean,
+                          latest_date = first(date),
+                          latest_close = first(close))
+
+median_close2 = merge(latest_median,latest_close,
+                     by = c("code","latest_date"))
+
+test = filter(median_close2, code == "SHA600001")
+
+
+head(median_close)
+
+head(median_close2)
+
+str(median_close)
+
+str(median_close2)
+
+test
+
 ```
 
 ##计算低估率指标
